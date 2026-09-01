@@ -113,7 +113,7 @@ frida-tools==13.7.1
 frida==16.7.19
 ```
 
-Use dump offsets in the Frida [script](https://github.com/Impact-I/reFlutter/blob/main/frida.js):
+Use dump offsets in the Frida [script](https://github.com/aster-god/reFlutter/blob/main/frida.js):
 
 ```bash
 frida -U -f <package> -l frida.js
@@ -137,7 +137,7 @@ Look for the `Value` field.
 
 ### Build Engine
 
-Engines are built using [GitHub Actions](https://github.com/Impact-I/reFlutter/actions) based on data in [enginehash.csv](https://github.com/Impact-I/reFlutter/blob/main/enginehash.csv). Snapshot hash is retrieved from:
+Engines are built using [GitHub Actions](https://github.com/aster-god/reFlutter/actions) based on data in [enginehash.csv](https://github.com/aster-god/reFlutter/blob/main/enginehash.csv). Snapshot hash is retrieved from:
 
 ```
 https://storage.googleapis.com/flutter_infra_release/flutter/<hash>/android-arm64-release/linux-x64.zip
@@ -146,7 +146,7 @@ https://storage.googleapis.com/flutter_infra_release/flutter/<hash>/android-arm6
 <details>
 <summary>release</summary>
 
-[![gif](https://user-images.githubusercontent.com/87244850/135758767-47b7d51f-8b6c-40b5-85aa-a13c5a94423a.gif)](https://github.com/Impact-I/reFlutter/actions)
+[![gif](https://user-images.githubusercontent.com/87244850/135758767-47b7d51f-8b6c-40b5-85aa-a13c5a94423a.gif)](https://github.com/aster-god/reFlutter/actions)
 
 </details>
 
@@ -155,7 +155,7 @@ https://storage.googleapis.com/flutter_infra_release/flutter/<hash>/android-arm6
 Manual Flutter code patching is supported using Docker:
 
 ```bash
-git clone https://github.com/Impact-I/reFlutter && cd reFlutter
+git clone https://github.com/aster-god/reFlutter && cd reFlutter
 docker build -t reflutter -f Dockerfile .
 ```
 
